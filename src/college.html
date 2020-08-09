@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  <title>TranscriptZ</title>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">TranscriptZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./admin.html">Admin <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./college.html">School</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./student.html">Student</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+<div id="user_Main_Div">
+  <!-- <p align="right"> <button type="button" id="home_Button">HOME</button> </p> -->
+  <div id="userBody">
+    <h1 class="display-2" align="center">School Page</h2>
+    <p align = "center"class="h4"> Please Enter the Your Address:  <input type="text" id = "submitUserAddress" placeholder="Address"/>
+     <button type="button" id="submit_User_Address" class="btn btn-dark" > Submit </button></p>
+     <!-- <button onclick="hello()"> Test </button> -->
+  </div>
+  <div id="user_wallet" align="center" class="UserWallet">
+    <p align="center">
+    <input type="file" id="user_avatar" name="userAvatar" accept=".txt">
+    <button type="button" id="submit_User_Wallet" class="btn btn-dark">Create Wallet </button>
+    </p>
+  </div>
+</div>
+
+<!-- Order of the scripts matter First load jquery then javascript -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ </body>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<!-- <script type="text/javascript">
+  $(document).ready(function(){
+    var x = document.getElementById("user_wallet");
+    x.style.display = "none";
+  });
+</script> -->
+</body>
+
+</html>

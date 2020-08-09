@@ -1,0 +1,24 @@
+.UserWallet,.StudRegister,.StudIntTrans{
+  display:none
+}
+/* td
+{
+    height: 50px;
+    width: 50px;
+}
+
+#clg_stud_tbl td
+{
+    text-align: center;
+    vertical-align: middle;
+} */
+
+.display-2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.display-3{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

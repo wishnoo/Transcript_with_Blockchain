@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  <title>TranscriptZ</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">TranscriptZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./admin.html">Admin <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./college.html">School</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./student.html">Student</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+  <!-- <p align="right"> <button type="button" id="home_Button">HOME</button> </p> -->
+  <div id="adminBody" align="center">
+    <h1 class="display-3">School Adminstrator Functions</h1><br>
+    <p align="center" id=p_Admin_Wallet>
+      <input type="file" id="transcript_img" name="transcript" accept=".jpg">
+      <button type="button" id="submit_transcript" class="btn btn-dark">Upload </button>
+      <br><br>
+      <p class="h4">First name:
+      <input type="text" name="first Name" id="college_first">
+      </p><br>
+      <p class="h4">Last name:
+      <input type="text" name="lastname" id="college_last"></p>
+      <br>
+      <p class="h4">Student ID:
+      <input type="text" name="StudentID" id="college_ID"></p>
+      <br>
+      <p class="h4">Date of Birth:
+      <input type="date" name="dateofbirth" id="college_DOB"></p>
+      <br><br>
+      <input type="submit" value="Submit" id="college_submit">
+    </p>
+    <!-- <p align="center">
+      <br>
+      <label id=l_inviteAddress> Please Enter the Student Address to be invited: </label> <input type="text" id="C_studentAddress" placeholder="inviteAddress" />
+      <button type="button" id="submit_Student_Address"> Submit </button>
+    </p><br> -->
+    <p align="center">
+      <table id="clg_stud_tbl" border="1" class="table table-dark">
+        <tr>
+          <td>Student ID</td>
+          <td>Student First Name</td>
+          <td>Student last Name</td>
+          <td>DOB</td>
+          <td>Verify</td>
+        </tr>
+      </table>
+    </p><br>
+
+    <div id="hash_img">
+      <img id="dummyimage" src="" />
+    </div>
+
+  </div>
+
+  <!-- Order of the scripts matter First load jquery then javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ </body>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/ipfs/dist/index.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.js"></script>
+  <!-- <script src="https://unpkg.com/ipfs/dist/index.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js"></script> -->
+  <!-- <script src="https://wzrd.in/standalone/buffer"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/buffer@5.2.1/index.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/buffer@5.2.1/index.min.js"></script> -->
+
+  <script src="index.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    studLayout();
+  });
+</script>
+</body>
+
+</html>
